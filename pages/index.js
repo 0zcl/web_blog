@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import Head from 'next/head'
 import {Row, Col, List, Icon} from 'antd'
 import Header from '../components/Header'
-import '../public/style/pages/index.css'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [myList, setMyList] = useState(
@@ -48,6 +48,7 @@ const Home = () => {
           <Advert />
         </Col>
       </Row>
+      <Footer />
     </>
   )
 }
